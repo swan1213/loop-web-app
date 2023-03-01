@@ -1,0 +1,25 @@
+{
+    "contracts": {
+        "gov": "terra17shvf0cm0kpqpmxknkq4yg74gthpufqwhr7swt",
+        "loopToken": "terra1qr9dvl8c76tn2m2fng7ehndle6y7qvy9ynl8ks",
+        "factory": "terra1v9paysyzp0lvnr6k68vnp2dtpxmphkga2e8wye",
+        "oracle": "terra1ycn4f6cguwm4maugr6xez4fglesajy8jhq6v4m",
+        "mint": "terra1xfdjnrky75j3rrfzsqelpexqnha2vpxj57vnt0",
+        "staking": "terra16ezlcyxtahjpn5cv7agd28v32pe5m9swm58wg0",
+        "tokenFactory": "terra16g3y4kuxjwcq09k9prtgxg8vdpgjea2shef4dr",
+        "collector": "terra15ck97wxwcnv93whp57gqt63yjcfhn5dxu4gzt4",
+        "community": "terra14artla50sl48phzmal24gpwhqpft7ywt5grhmu",
+        "airdrop": "terra1p6nvyw7vz3fgpy4nyh3q3vc09e65sr97ejxn2p",
+        "limitOrder": "terra1vc4ch0z3n6c23f9uywzy5yqaj2gmpnam8qgge7"
+    },
+    "whitelist": {
+        "terra1qr9dvl8c76tn2m2fng7ehndle6y7qvy9ynl8ks": {
+            "symbol": "loopin",
+            "name": "loopin",
+            "token": "terra1qr9dvl8c76tn2m2fng7ehndle6y7qvy9ynl8ks",
+            "pair": "terra1da5g4y9dnsvcxq62r2q2355sxshsu549htrc3t",
+            "lpToken": "terra18xmf5hqdr3wjqv52ua9x2mfze0cz0mq6fy9a5f",
+            "status": "LISTED"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.card {
+  box-shadow: none;
+}
+
+
+.airdropBox{
+  margin-top:250px
+}
+@media only screen and (max-width: 768px) {
+  .airdropBox{
+    margin-top:45px
+  }
+}

@@ -1,0 +1,158 @@
+@import "../../styles/mixins";
+.marketTable .marketTrade{position: absolute;
+  right: 20px;
+  top: 15px;
+  background: #c83e93;
+  width: 180px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  color: black;
+  border-radius: 10px;
+  justify-content: center;}
+.marketTable{
+  width: 893px!important;
+  margin: 100px auto auto!important;
+  background: #1b1b1b;
+  border-radius: 10px;
+  overflow: auto;
+  max-width: 100%;
+  position: relative;
+}
+.marketTable h3{padding-top: 15px;
+  padding-left: 20px;
+  color: #fff;
+  font-size: 15px;}
+.marketTable span{    padding-top: 5px;
+  padding-left: 20px;
+  color: #919191;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding-bottom: 15px;
+  display: block;
+}
+ 
+.marketTable table{margin:0;
+  min-height: 480px;
+  border-top: 1px solid #333;}
+.marketTable table thead{margin:0;}
+.marketTable table thead tr{background-color: #1b1b1b !important;}
+.marketTable table thead tr td{padding: 12px 10px; color: #919191; text-align: center;}
+// .marketTable table thead tr td:nth-child(1){padding-left:50px !important;}
+.marketTable table tr{margin:0;}
+.marketTable table tr td div{display: flex;
+  align-items: center; color: #fff;}
+.marketTable table tr td div img{margin-right:10px;}
+.marketTable table tr td div a{margin:0;}
+.marketTable table tr td div a button{    margin: 0;
+  padding: 0!important;
+  width: 24px;
+  height: 24px;
+  background: rgba(45,45,45,.35)!important;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;}
+  .marketTable table tr td:last-child a button{    background: rgba(45,45,45,.35)!important;
+    border: none!important;
+    border-radius: 5px;
+    padding: 3px 15px;
+    color: #c83e93 !important;
+    font-weight: 400;
+    font-size: 14px;}
+.marketTable table tr:nth-child(odd){ background: #1f1f1f;}
+.marketTable table tr td:nth-child(1){padding-left:30px; text-align: left;}
+.marketTable table tr td{
+  padding:8px 10px;
+  text-align: center;
+}
+.btn.addTokenBtn{
+    background: linear-gradient(90.24deg, #FA2CAB -1.6%, #9B69FC 99.79%), #FA2CAB;
+    border-radius: 5px !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    width: 100px;
+    height: 35px;
+    padding: 5px 15px !important;
+    border: 0;
+    &:hover {
+      background: #FA2CAB;
+    }
+  }  
+  
+  
+  
+  body .staking-table.token-table-cz tr td {
+      padding: 15px 10px !important;
+  }
+  body .markets {
+      margin-bottom: 100px !important;
+  }
+  .cz-tokens-mobile > div > div:last-child {
+      border-radius: 0 0 10px 10px;
+  }
+  .cz-tokens-mobile > div > div .cz-tokens-mobile-td.cz-left-td:nth-child(2) button {
+      width: auto;
+  }
+  .BtnTrade {
+    clear: both;
+    width: 100%;
+  }
+  .labeling {
+    padding: 0 !important;
+  }
+  .staking-table.token-table-cz tr td div p {
+    width: 130px;
+  }
+  
+  
+  .marketUp {
+    color: #32FE9A !important;
+    padding-left: 10px;
+  }
+  .marketUp::before {
+    content: '';
+    float: left;
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml;utf8, <svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 2.62268e-07L6 5L4.76837e-07 5L3 2.62268e-07Z" fill="%2332FE9A"/></svg>');
+    position: absolute;
+    top: 32px;
+  }
+  
+  @media(max-width:1024px){
+    .marketUp::before {
+      top: 24px;
+    }
+  }
+  
+  @media(max-width:991px){
+    .marketTable{display: none;}
+  }
+  
+  @media(max-width:600px){
+    body .cz-tokens-mobile-td .ui.grid img.ui.image {
+      width: 30px !important;left: 5px;
+    }
+    .cz-tokens-mobile-td .ui.grid {
+      padding: 0px 0 5px 40px !important;
+    }
+    .markets h3 {
+      font-size: 20px !important;
+    }
+    .cz-tokens-mobile-tr .markets span {
+      font-size: 14px !important;
+    }
+  }
+
+  .marketLoader{
+    position: absolute;
+    left: 48%;
+    top: 46%;
+  }

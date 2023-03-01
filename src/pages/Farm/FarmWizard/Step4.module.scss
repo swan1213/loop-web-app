@@ -1,0 +1,62 @@
+@import "../../../styles/mixins";
+
+.component {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 18px;
+  margin-top: 100px;
+  justify-items: center;
+  justify-content: center;
+
+  & > *{
+    text-align: center;
+  }
+}
+.content{
+  padding: 10px 60px 60px 60px;
+}
+.container{
+  margin: 0 auto;
+  max-width: 700px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  @include mobile{
+    padding: 30px;
+    width: 80%;
+    max-width: 80%;
+  }
+  .title{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+.form{
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0 auto;
+
+  @include desktop{
+    max-width: 400px;
+    width: 400px;
+  }
+
+  h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  .info{
+    margin-top: 40px;
+  }
+  .msg{
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+}

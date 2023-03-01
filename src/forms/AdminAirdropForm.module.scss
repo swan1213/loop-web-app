@@ -1,0 +1,39 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.input_token {
+  display: block;
+  width: 100%;
+  border: 1px solid blue;
+  padding: 10px 10px;
+}
+.input_value {
+  display: block;
+  width: 100%;
+  border: 1px solid blue;
+  padding: 10px 10px;
+}
+.tokenGroup {
+  flex: 65%;
+}
+.valueGroup {
+  flex: 30%;
+  margin-left: 5px;
+}
+.inputHolder {
+  float: left;
+}
+.inputContainer {
+  margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+}
+.inputs {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*
+.inputContainer .tokenGroup, .inputContainer .valueGroup{
+  float:left;
+}*/

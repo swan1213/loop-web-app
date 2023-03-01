@@ -1,0 +1,11 @@
+@import "../styles/mixins";
+
+.trigger {
+  @include flex;
+  color: $theme_light_blue_color;
+  border: 1px solid $theme_light_blue_color;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+}

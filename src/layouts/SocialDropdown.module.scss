@@ -1,0 +1,66 @@
+@import "../styles/mixins";
+
+.socialDropdown {
+    background: #1B1B1B;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    z-Index: 5;
+    position: relative;
+    padding: 10px;
+    transform: translateY(0);
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
+}
+
+.list {
+  padding: 10px 0;
+}
+.title{
+    width: 45px;
+height: 13px;
+
+font-family: Lexend;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-transform: capitalize;
+display: flex;
+justify-content: space-around;
+ opacity: 1;
+  cursor: pointer;
+
+
+color: #FFFFFF;
+}
+.socialLink{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+ opacity: 1;
+  cursor: pointer;
+
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width :103px;
+    height : 34px;
+    top : -1308px;
+    left : 35876px;
+    border-radius :6px;
+    background: #1B1B1B;
+
+border: 1px solid #01CDFD;
+box-sizing: border-box;
+border-radius: 6px;
+    img{
+        width: 13px;
+    }
+}

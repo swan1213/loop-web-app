@@ -1,0 +1,37 @@
+.react-financial-charts-ew-resize-cursor {
+  cursor: pointer;
+}
+
+.react-no-select {
+  user-select: none;
+}
+
+.period_button {
+  font-size: 12px;
+  color: white;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.period_button:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.active {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ranges {
+  background-color: rgba(45, 45, 45, 0.5);
+  padding: 2px;
+  border-radius: 10px;
+  display: flex;
+  width: fit-content;
+}
+
+.chart_board {
+  padding: 20px;
+}

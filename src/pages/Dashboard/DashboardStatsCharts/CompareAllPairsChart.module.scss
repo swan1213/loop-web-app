@@ -1,0 +1,137 @@
+@import "../../../styles/mixins";
+
+$padding: 20px;
+
+.priceDropdown {
+  padding: 8px;
+  border-radius: 10px;
+  border: 2px solid #1b1b1b;
+  background-color: #2d2d2d;
+  width: fit-content;
+  height: fit-content;
+  @include mobile {
+    width: 80%;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-top: 4px;
+  }
+}
+.firstPair {
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: bold;
+  color: #01cdfd;
+}
+.secondPair {
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: bold;
+  color: #32fe9a;
+}
+
+.component {
+  //height: 100%;
+  background: $theme_black_color;
+  border-radius: 20px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include mobile {
+    margin-top: 0px;
+  }
+}
+
+.header {
+  @include desktop {
+    @include flex(space-between);
+  }
+
+  .displayFlex {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    @include mobile {
+      width: unset;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+    }
+  }
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.token {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.symbol {
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 19px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  /* white - text #FFFFFF */
+
+  color: #ffffff;
+  padding-right: 8px;
+}
+
+.price {
+  margin-left: 5px;
+  color: #c83e93;
+}
+
+.ranges {
+  background-color: rgba(45, 45, 45, 0.5);
+  padding: 2px;
+  border-radius: 10px;
+  @include mobile {
+    margin-top: 10px;
+  }
+
+  .button:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.button {
+  @include transition;
+
+  border-style: solid;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+
+  &.active {
+    background-color: $theme_black_color;
+    border-color: white;
+    color: white;
+  }
+}
+
+.description {
+  padding: $padding;
+  padding-top: 0;
+}

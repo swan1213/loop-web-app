@@ -1,0 +1,61 @@
+@import "../styles/mixins";
+
+.grid {
+}
+
+.card {
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Vertical */
+
+  section {
+    padding: 13px 15px;
+  }
+}
+
+.heading {
+  padding: 10px 0;
+}
+.normal_heading {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.stake_lp_btn {
+  padding: 10px 30px;
+}
+.price {
+  color: $theme_light_purple_btn;
+}
+.subtr_vested {
+  font-size: 15px;
+
+}
+
+@include mobile{
+  .poolBtn, .stakeBtn{
+    margin: 5px;
+    margin-left: 0 !important;
+  }
+}
+
+.poolBtn{
+  background-color: $theme_black_border_color !important;
+  border: none !important;
+  color: $theme_light_purple_btn !important;
+  font-weight: normal;
+  padding: 5px 30px !important;
+  &:hover{
+    color: $white !important;
+  }
+}
+.stakeBtn{
+  background-color: $theme_black_border_color !important;
+  border: none !important;
+  color: $aqua !important;
+  font-weight: normal;
+  padding: 5px 30px !important;
+  &:hover{
+    color: $white !important;
+  }
+}

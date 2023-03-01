@@ -1,0 +1,149 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.wrapper {
+  width: 100%;
+  overflow-x: scroll;
+}
+.desktopView{
+  display: block;
+  @include mobile{
+    display: none;
+  }
+}
+.margin {
+  margin-top: 20px;
+}
+.singleCell {
+ display: flex;
+}
+
+.cell {
+  background: $theme_black_color;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.th {
+  color: $battleship;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+
+  .colspan & {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.tr_with_border td,
+.tr_no_border td {
+  padding: 10px 15px;
+}
+
+.tr_with_border {
+  padding: 15px;
+}
+.subtd {
+  padding: 15px;
+}
+
+.tr_no_border {
+  border-bottom: none;
+}
+
+.subtr td {
+  padding-bottom: 40px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.fixed-left {
+  @include desktop {
+    position: sticky;
+    left: 0;
+  }
+}
+
+.fixed-right {
+  @include desktop {
+    position: sticky;
+    right: 0;
+  }
+}
+
+.narrow-left {
+  padding-left: 5px;
+}
+
+.narrow-right {
+  padding-right: 5px;
+}
+
+/* color */
+.red {
+  background: fade-out($red, 0.92);
+}
+
+.bold {
+  color: white;
+  font-weight: 500;
+}
+
+/* border */
+.border-left {
+  border-left: $border;
+}
+
+.border-right {
+  border-right: $border;
+}
+.btn {
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  &:hover {
+    color: $white;
+  }
+}
+
+.harvest_btn {
+  background-color: $theme_dark_blue_color;
+  color: $theme_black_color;
+  &:hover {
+    background: $blue;
+  }
+}
+.stake_btn {
+  background-color: $theme_purple_btn;
+  color: $theme_black_color;
+  &:hover {
+    background: $theme_light_purple_btn;
+  }
+}
+
+.tr_with_border:nth-child(odd),
+.tr_no_border:nth-child(odd) {
+  background-color: $theme_light_black_color;
+}
+.tr_no_border td {
+  color: $theme_green_color;
+}
+.subtr:nth-child(even) {
+  background-color: $theme_light_black_color;
+}

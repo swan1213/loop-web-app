@@ -1,0 +1,44 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+$symbol: 14px;
+$name: 12px;
+
+.asset {
+  @include flex(space-between);
+  // Because only one line of data can exist, fix the height.
+  height: (($symbol + $name) * $line-height);
+  width:100%;
+  p{font-size: 14px !important; padding-right:10px;}
+}
+
+.header {
+  text-align: left;
+  /*display: flex;
+  flex-direction: row;*/
+}
+
+.symbol {
+  font-size: $symbol;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  color: $slate;
+  font-size: $name;
+  font-weight: normal;
+}
+
+.footer {
+  text-align: right;
+}
+
+.balance {
+  color: $blue;
+  font-size: 12px;
+}
+.dimBalance{
+  color: $theme_dim_dark;
+}

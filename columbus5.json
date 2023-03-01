@@ -1,0 +1,157 @@
+{
+  "contracts": {
+    "loopToken": "terra1nef5jf6c7js9x6gkntlehgywvjlpytm7pcgkn4",
+    "tokenFactory": "terra16hdjuvghcumu6prg22cdjl96ptuay6r0hc6yns",
+    "factory": "terra1mzj9nsxx0lxlaxnekleqdy8xnyw2qrh3uz6h8p",
+    "gov": "terra1wh39swv7nq36pnefnupttm2nr96kz7jjddyt2x",
+    "collector": "terra1s4fllut0e6vw0k3fxsg4fs6fm2ad6hn0prqp3s",
+    "community": "terra1x35fvy3sy47drd3qs288sm47fjzjnksuwpyl9k",
+    "mint": "terra1wfz7h3aqf4cjmjcvc6s8lxdhh7k30nkczyf0mj",
+    "staking": "terra17f7zu97865jmknk7p2glqvxzhduk78772ezac5",
+    "loop_staking": "terra1nd3x2cqaqffp9xfa8epp5lw4cyc48rr4qz4v9d",
+    "loop_airdrop": "terra1atch4d5t25csx7ranccl48udq94k57js6yh0vk",
+    "loop_farm_staking": "terra1jqjpa66ethxc8wkkv5dvtvv7mp546expls6lw4",
+    "loop_farm_staking_v2":"terra1cr7ytvgcrrkymkshl25klgeqxfs48dq4rv8j26",
+    "loop_farming_airdrop": "terra1ax2xsp6wegcmlhu3lrng0yhaeknergjq3j2azl",
+    "farmAirdrop2": "terra1rz75ls5jztvfs7j99ryqpwv3c0hyxys5fmcuhg",
+    "loopAirdrop2": "terra1acwzpr5hmceckk6dumrtrclzzkaz46tasutljl",
+    "looprAirdrop1": "terra1twtgca3p9ynjw30tuqrf3fh270f38fxjfe950c",
+    "looprAirdrop101": "terra1qqfvgyc3uvpqhlwfkyvv2tfrsmxhljxqvr3skl",
+    "loop_distribution_team": "terra17dxwyl4rty90hq30kamq2q7uzhpux6uaxztp45",
+    "loop_distribution_investor": "terra1uu6lpxqeyhwd9vvlnh20z300myc0c5v49x97sp",
+    "loopDecember21":"terra1zy9pzlz7rw7j7j96ze7e935dqvxsg0em87vhlw",
+    "looprDecember21":"terra1s7kmy2ed46pmdvdpkfzvmq3tns9llxsq0dudk6",
+    "loop_staking_18":"terra1gaawzzmma5s465w4suzlmmpspef89tp4dysl2f",
+    "loop_staking_3":"terra1th3s05dh6qjk5nngthxsl4d8sv7k05svpjlr87"
+  },
+  "whitelist": {
+    "terra1jx4lmmke2srcvpjeereetc9hgegp4g5j0p9r2q": {
+      "symbol": "LOOPR",
+      "name": "LOOPR token",
+      "token": "terra1jx4lmmke2srcvpjeereetc9hgegp4g5j0p9r2q",
+      "pair": "terra1dw5j23l6nwge69z0enemutfmyc93c36aqnzjj5",
+      "lpToken": "terra1j6l2m2e2q92zkd9v48cs2l4n74rxn2plphul96",
+      "status": "LISTED"
+    },
+    "terra1nef5jf6c7js9x6gkntlehgywvjlpytm7pcgkn4": {
+      "symbol": "LOOP",
+      "name": "LOOP token",
+      "token": "terra1nef5jf6c7js9x6gkntlehgywvjlpytm7pcgkn4",
+      "pair": "terra106a00unep7pvwvcck4wylt4fffjhgkf9a0u6eu",
+      "lpToken": "terra1f0nj4lnggvc7r8l3ay5jx7q2dya4gzllez0jw2",
+      "status": "LISTED"
+    },
+    "terra15tztd7v9cmv0rhyh37g843j8vfuzp8kw0k5lqv": {
+      "symbol": "ALTE",
+      "name": "altered",
+      "token": "terra15tztd7v9cmv0rhyh37g843j8vfuzp8kw0k5lqv",
+      "pair": "terra1whns5nyc8sw328uw3qqnyafxd5yfqsytkdkgqz",
+      "lpToken": "terra1u32ccknva07y3er2npf05tk0euu7qjvhpv2csp",
+      "status": "LISTED"
+    },
+    "terra1ez46kxtulsdv07538fh5ra5xj8l68mu8eg24vr": {
+      "symbol": "LOTA",
+      "name": "loterra",
+      "token": "terra1ez46kxtulsdv07538fh5ra5xj8l68mu8eg24vr",
+      "pair": "terra15568nqrqcawm263yqcuuuvj5mh763tp8jyscq3",
+      "lpToken": "terra1r566wqak92thyz2ka72p33fcup4uz35kdm64v0",
+      "status": "LISTED"
+    },
+    "terra19djkaepjjswucys4npd5ltaxgsntl7jf0xz7w6": {
+      "symbol": "TWD",
+      "name": "Terra World Token",
+      "token": "terra19djkaepjjswucys4npd5ltaxgsntl7jf0xz7w6",
+      "pair": "terra1jfp5ew4tsru98wthajsqegtzaxt49ty4z2qws0",
+      "lpToken": "terra1waxv8terfksh59mx6yrpqjvgr4t4z5mad2ukfd",
+      "status": "LISTED"
+    },
+    "terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr": {
+      "symbol": "SPEC",
+      "name": "Spectrum token",
+      "token": "terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr",
+      "pair": "terra1jkr0ef9fpghdru38ht70ds6jfldprgttw6xlek",
+      "lpToken": "terra1cwuv67djlrmqywqf7xxqmrrkphv3658kyna7fs",
+      "status": "LISTED"
+    },
+    "terra13xujxcrc9dqft4p9a8ls0w3j0xnzm6y2uvve8n": {
+      "symbol": "STT",
+      "name": "StarTerra Token",
+      "token": "terra13xujxcrc9dqft4p9a8ls0w3j0xnzm6y2uvve8n",
+      "pair": "terra1lgazu0ltsxm3ayellqa2mhnhlvgx3hevkqeqy2",
+      "lpToken": "terra16j3v7gkczclh46p6uwymrtufnq5ca4psdl04sj",
+      "status": "LISTED"
+    },
+    "terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6": {
+      "symbol": "MIR",
+      "name": "Mirror",
+      "token": "terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6",
+      "pair": "terra1cpzkckgzz90pq8fkumdjc58ee5llrxt2yka9fp",
+      "lpToken": "terra1lfmgcqkxpzr039g8v2qfd0u9zd5eh8xvvd8gh5",
+      "status": "LISTED"
+    },
+    "terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76": {
+      "symbol": "ANC",
+      "name": "Anchor Token",
+      "token": "terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76",
+      "pair": "terra1f6d3pggq7h2y7jrgwxp3xh08yhvj8znalql87h",
+      "lpToken": "terra1a3scsw0gr4wjvhnrg94g3yteg5cwxu92dr8rgz",
+      "status": "LISTED"
+    },
+    "terra1kcthelkax4j9x8d3ny6sdag0qmxxynl3qtcrpy": {
+      "symbol": "MINE",
+      "name": "Pylon MINE Token",
+      "token": "terra1kcthelkax4j9x8d3ny6sdag0qmxxynl3qtcrpy",
+      "pair": "terra13eggta6zqfg03mxgqg9p5paqka7tgaaxnkhuuu",
+      "lpToken": "terra1jf6s2xm7q6eh77r2lykvfrzlue6m8x9zxrg3zk",
+      "status": "LISTED"
+    },
+    "terra17jnhankdfl8vyzj6vejt7ag8uz0cjc9crkl2h7": {
+      "symbol": "DPH",
+      "name": "Digipharm",
+      "token": "terra17jnhankdfl8vyzj6vejt7ag8uz0cjc9crkl2h7",
+      "pair": "terra178yhudw6cwtnrn4fq593z87y385m0xe9n6x423",
+      "lpToken": "terra1d6a90q0stwcp4pvqeasqnl8l8kkjt0mgjt9pk9",
+      "status": "LISTED"
+    },
+    "uluna": {
+      "symbol": "uluna",
+      "name": "Luna",
+      "token": "uluna",
+      "pair": "terra1sgu6yca6yjk0a34l86u6ju4apjcd6refwuhgzv",
+      "lpToken": "terra1t599xaj0lyyyjza86uskcqdy9aqy2txzdezyln",
+      "status": "NONE"
+    },
+    "terra1aa7upykmmqqc63l924l5qfap8mrmx5rfdm0v55": {
+      "symbol": "whWBTC",
+      "name": "Wormhole:Wrapped BTC",
+      "token": "terra1aa7upykmmqqc63l924l5qfap8mrmx5rfdm0v55",
+      "pair": "terra17e0aslpj3rrt62gwh7utj3fayas4h8dl3y8ju3",
+      "lpToken": "terra1429u2vanflm8u0vtl4ejftadcgdunkzknhw72a",
+      "status": "LISTED"
+    },
+    "terra14tl83xcwqjy0ken9peu4pjjuu755lrry2uy25r": {
+      "symbol": "whWETH",
+      "name": "Wormhole:Wrapped Ether",
+      "token": "terra14tl83xcwqjy0ken9peu4pjjuu755lrry2uy25r",
+      "pair": "terra17kmgn775v2y9m35gunn3pnw8s2ggv6h95wvkxr",
+      "lpToken": "terra1skhdh4xr9en0wapp4jt4c2e2f2tpajux9sk0uh",
+      "status": "LISTED"
+    },
+    "terra15a9dr3a2a2lj5fclrw35xxg9yuxg0d908wpf2y": {
+      "symbol": "WMIM",
+      "name": "Magic Internet Money",
+      "token": "terra15a9dr3a2a2lj5fclrw35xxg9yuxg0d908wpf2y",
+      "pair": "terra1me6a35xuzf9ycjaaqyj7798g5tewunp6dzg27e",
+      "lpToken": "terra1mvfyxwdxrs8ntvfkuau44dry0uzt2pspe8r0tr",
+      "status": "LISTED"
+    },
+    "terra1w8kvd6cqpsthupsk4l0clwnmek4l3zr7c84kwq": {
+      "symbol": "HALO",
+      "name": "Angel Protocol",
+      "token": "terra1w8kvd6cqpsthupsk4l0clwnmek4l3zr7c84kwq",
+      "pair": "terra1yjg0tuhc6kzwz9jl8yqgxnf2ctwlfumnvscupp",
+      "lpToken": "terra17pzt8t2hmx6587zn6yh5ensylm3s9mm4m72v2n",
+      "status": "LISTED"
+    }
+  }
+}

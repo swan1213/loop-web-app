@@ -1,0 +1,38 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.button {
+  @include flex;
+  @include button;
+
+  background-color: $theme_light_purple_btn;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $theme_light_purple_btn;
+  color: $theme_black_color;
+  font-size: 13px;
+  font-weight: 600;
+  height: 34px;
+  padding: 0 10px;
+
+  &:hover {
+    background-color: fade-out($theme_light_purple_btn, 0.2);
+    text-decoration: none;
+  }
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+.address {
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.simpleBtnFlex{
+  display: flex;
+  color: #9bb0cf;
+}

@@ -1,0 +1,105 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.wallet {
+  width: 260px;
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+.header {
+  @include flex(space-between);
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.address {
+  @include flex;
+
+  color: white;
+  font-size: 16px;
+}
+
+.disconnect {
+  font-size: 10px;
+}
+
+.actions {
+  @include flex(space-between);
+  font-size: 12px;
+
+  .button {
+    @include flex;
+    @include link($blue, lighten($blue, 25%));
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 18px;
+  }
+}
+
+.send {
+  margin-top: 20px;
+}
+
+@include mobile{
+  .mobileWallet{
+   width:100%;
+  }
+  .mobileWallet header{
+    margin-bottom: 10px;
+      } 
+      .mobileWallet header button{
+    padding: 5px !important;
+    background: #292727;
+    border: none;
+    color: #b83e93  !important;
+    font-size: 18px;
+    font-weight: 200 !important;
+          } 
+      .mobileWallet header span{
+        margin: 2px 0 10px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-right: 15px;
+        font-size: 18px;
+        font-weight: 200 !important;
+          }
+           .mobileWallet section{
+            display: block;
+              }
+              .mobileWallet section div{
+                display: flex;
+                  }
+                  .mobileWallet section div button{
+                    color: #01cdfd !important;
+                    flex-direction: inherit;
+                    background: #292727;
+                    padding: 5px;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    font-weight: 200 !important;
+                      }
+                  .mobileWallet section a{
+                    color: #01cdfd !important;
+                    font-weight: 200 !important;
+    background: #292727;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+                      }
+              .mobileWallet a.send{
+                background: #01cdfd;
+                color: #000;
+                font-weight: 100;
+                margin-top:10px;
+                font-size: 18px;
+                height: 35px;
+                font-weight: 200 !important;
+                  }
+}

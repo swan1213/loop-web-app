@@ -1,0 +1,35 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.container{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto !important;
+  @include desktop{
+    padding: 0 50px;
+  }
+  @include mobile{
+    padding: 10px 20px;
+  }
+
+  & *{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .heading{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .details{
+    text-align: center;
+  }
+  .button{
+    padding: 25px !important;
+    font-size: 17px;
+    color: black;
+    background-color: $theme_purple_btn !important;
+  }
+}

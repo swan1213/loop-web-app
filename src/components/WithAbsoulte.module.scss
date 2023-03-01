@@ -1,0 +1,31 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+.wrapper {
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  margin-top: 10px;
+  padding: 25px;
+
+  background: $darkblue;
+  border: 1px solid fade-out($blue, 0.75);
+  border-radius: $border-radius;
+  box-shadow: 0 20px 40px fade-out(black, 0.5);
+}
+
+@include mobile{
+  .mobileCard{
+    position: relative;
+    width: 235px;
+    border: 0;
+    padding:0px;
+    box-shadow: 0 0 0 rgba(0,0,0,0)
+  }
+}
+
+

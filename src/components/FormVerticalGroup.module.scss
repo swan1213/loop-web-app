@@ -1,0 +1,271 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+.slippageHeader{display: none !important;}
+.slippagefrom{background: #131313;
+  border-radius: 15px;
+}
+.slippagefromUnit{
+  background: #1b1b1b;
+  border: 4px solid #2D2D2D !important;
+  justify-content: space-between !important;
+  font-size: 17px;
+  font-weight: 700;
+  max-width: 100%;
+  max-height: 55px;
+  padding: 10px;
+  border-radius: 10px !important;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.pendiongSlippage{
+  font-weight: normal;
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  padding-left: 15px;
+  color: #919191;
+}
+.field.slippagefromFields{flex:1 !important; position: relative;}
+.field.slippagefromFields input{text-align: right;}
+.group + .group {
+  margin-top: 20px;
+  //display: flex;
+}
+
+.component {
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  ::placeholder {
+    color: fade-out(#f0f0f0, 0.8);
+  }
+}
+
+$padding: 10px 20px;
+
+.border {
+  @include transition(border-color);
+  border-radius: 5px;
+  padding: 0;
+  position: relative;
+
+  &.readOnly {
+    border-color: transparent;
+    background: transparent;
+  }
+
+  &.focused {
+    border-color: $blue;
+  }
+
+  &.error {
+    border-color: $red;
+  }
+}
+
+.select > button {
+  @include flex(space-between);
+  width: 100%;
+}
+
+/* field */
+.header{
+  margin: 10px 0 !important;
+}
+.header,
+.wrapper {
+  @include flex(space-between);
+
+  .label,
+  .field {
+    flex: 1;
+  }
+  .sm_field {
+    @include desktop{
+      flex: 4 !important;
+    }
+  }
+
+  .help,
+  .unit {
+    flex: none;
+    text-align: right;
+    @include flex(flex-end);
+  }
+  .unit {
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 4px;
+    border: 5px solid;
+    border-color: $theme_black_border_color;
+    flex: 1;
+  }
+}
+
+.header {
+  color: $battleship;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.wrapper {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  padding:0 5px;
+}
+
+.label > label {
+  display: block;
+  font-weight: 600;
+}
+
+.help {
+  white-space: pre;
+  background-color: $theme_dark_black_color !important;
+  color: $theme_dim !important;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.field {
+  //margin: 8px 0 0 8px;
+  flex: 2 !important;
+  input {
+    padding: 15px;
+    background-color: $theme_dark_black_color;
+    border-radius: 10px;
+    color: $theme_dark_blue_color;
+    font-size: 18px;
+  }
+}
+
+/* assets */
+.assets {
+  margin-top: 5px;
+}
+
+/* feedback */
+
+.swapBox{
+  margin-top:95px;
+}
+
+.poolBox{
+  margin-top:135px;
+}
+
+.feedback {
+  color:$red;
+  font-size: 10px;
+  // margin-top: -1px;
+  // margin-top: 95px;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.toSwap{
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.toSwap + button{color: #000 !important; margin:15px 0;}
+
+.slippageMax{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 15px 5px;
+}
+.slippageMaxMargin{
+  margin: 10px 0 5px 5px;
+}
+.slippageMax span, .max {
+  background: #2d2d2d !important;
+  border: none !important;
+  margin: 0 1px;
+  font-size: 13px;
+  color: #9BB0CF !important;
+  cursor: pointer;
+  padding: 3px 5px;
+  border-radius: 4px;
+  align-items: center;
+  height: 25px;
+  flex-grow: 1;
+  text-align: center !important;
+}
+.maxOnly{
+  display: flex;
+  max-width: 100px !important;
+}
+/*
+.slippageMax .max {
+  flex-grow: 1;
+  background: #2d2d2d !important;
+  border: none;
+  margin: 0 1px;
+  font-size: 13px;
+  color: #9BB0CF !important;
+  cursor: pointer;
+  padding: 3px 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+*/
+
+.slippagefrom_mini{
+  margin-top: 0 !important;
+}
+.wrapper2 .slippagefromUnit{max-width:50% !important;}
+
+.wrapper_mini{
+  margin-top: 0 !important;
+}
+.slippagefromUnitMini{
+  display: none !important;
+  background: #2d2d2d;
+}
+.miniField{
+  margin-top: 0 !important;
+
+  input{
+    height: 50px !important;
+  }
+}
+.pendiongSlippageMini{
+
+}
+.slippageFormMultiMeta{
+  text-align: left !important;
+  margin-left: 15px !important;
+}
+
+.slippageFormMultiInput{
+  text-align: left !important;
+  height: 54px;
+}
+.slippageFormMultiMax{
+  margin-right: 10px;
+  span{
+    margin:  0 5px;
+  }
+}
+.slippageHeaderMulti{
+  display: block;
+}
+.labelMulti{
+  text-align: left;
+  color: #FFFFFF;
+  font-family: Lexend;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+}

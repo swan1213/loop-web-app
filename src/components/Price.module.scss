@@ -1,0 +1,19 @@
+@import "../styles/variables";
+
+$fontSize: 19px;
+
+.price{
+  font-size: $fontSize;
+  font-weight: normal;
+}
+.value{
+  color: $theme_light_purple_btn;
+}
+.symbol_info{
+  color: $white !important;
+  font-size: 18px;
+  font-weight: normal;
+}
+.symbol{
+  color: $white !important;
+}

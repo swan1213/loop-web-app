@@ -1,0 +1,437 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-image: linear-gradient(
+0deg
+,hsla(0,0%,100%,.04),hsla(0,0%,100%,.04))!important;
+  height: 90px;
+  box-shadow: none!important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  -webkit-backdrop-filter: blur(18px)!important;
+  backdrop-filter: blur(18px)!important;
+  background: rgba(0,0,0,.2);
+  padding:10px 0;
+  @include mobile{
+    padding: 0;
+  }
+}
+
+@include mobile {
+  .header {
+    background: #0c0e20;
+    height:60px;
+  }
+
+  .collapsed {
+}
+
+}
+
+.container {
+  @include mobile{
+    margin: 20px 0 10px 0;
+  }
+  @include desktop {
+    @include flex(space-between);
+  }
+}
+
+.wrapper {
+  @include flex(space-between);
+  @include mobile {
+    @include flex(space-between);
+
+    .collapsed & {
+      @include flex(space-between);
+    }
+  }
+}
+
+.logo {
+  @include flex;
+  height: $nav-height;
+  @include desktop {
+    display: none;
+  }
+
+  @include mobile {
+    height: 60px;
+    .collapsed & {
+      display: flex;
+    }
+  }
+}
+.logo_link{
+  display: flex;
+  flex-direction: column;
+
+  & img:first-child{
+    margin-bottom: 5px;
+  }
+}
+
+.beta{
+  height: 15px;
+  width: 42px !important;
+  display: flex;
+  align-self: flex-end !important;
+}
+
+.badge {
+  margin-left: 8px;
+}
+
+.toggle i{font-size: 40px !important;
+  color: white !important;
+  width: auto !important;
+}
+.logo_link img:first-child {
+  width: 60px;
+  height: 40px;
+  margin-top: 6px;
+}
+.contents {
+  padding-top: 80px !important;
+}
+.toggle {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  @include desktop {
+    display: none;
+  }
+}
+
+@include mobile{
+  .mobileConnect{}
+  .mobileConnect{width: 180px;
+    display: block !important;
+}
+  .mobileConnect > div button{flex-direction: column;
+    height: auto;
+    padding: 5px 5px 0px;
+    width: 100%;}
+  .mobileConnect > div button span{    width: auto;
+    margin: 0;
+    font-size:18px;
+    font-weight: 200 !important;
+  }
+  .mobileConnect > div button strong span{margin: 0 2px;
+    color: white;}
+  .mobileConnect > div button strong{margin: 0;
+    border: none;
+    padding: 0;}
+  .mobileConnect > div button div{display: flex;
+    width: 100%;
+    background: #a72f79;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 5px 0;}
+  .connectLogoClose{
+    position: absolute;
+    right: 20px;
+    width: 50px;
+    height: 41px;
+    top: 8px;
+    color: rgba(255, 0, 0, 0);
+    cursor: pointer;
+    background: #292727;
+    border-radius: 10px;
+    font-size: 0;
+    overflow: hidden;
+    display: flex;
+    animation: lce;
+    justify-content: center;
+  }
+  .mobileConnect{
+    @include flex;
+    padding-left: 15px;
+  }
+}
+
+
+  .connectLogoClose:before{
+    @include mobile {
+    content: "+";
+    }
+    color: #fff;
+    transform: rotate(45deg);
+    font-size: 50px;
+    font-weight: 500 !important;
+    font-family: arial;
+    line-height: 40px;
+  }
+
+  @include desktop{
+    .connectLogoClose{
+      display: none;
+    }
+  }
+
+.headContainer
+{
+  padding:0 26px; height: 100%;
+}
+
+
+
+
+.connectLogo img{width: 75px;
+  margin-left: 15px;
+  margin-top: 2px;}
+.connectLogo {
+  @include desktop {
+    padding-top:.3125rem;
+    width: 210px;
+    text-align: center;
+    margin-left: 8px;
+  }
+
+  @include mobile {
+    .collapsed & {
+      display: none;
+    }
+  }
+}
+.support {
+  @include desktop {
+    width: 100%;
+    @include flex;
+    flex: 1;
+    height: 80px;
+  }
+
+  @include mobile {
+    .collapsed & {
+  left: -100%;
+    }
+  }
+}
+
+.connect {
+  @include flex;
+  padding-left: 15px;
+  // display: none;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.hr {
+  margin: 0;
+}
+.menu{
+  @include desktop{
+    display: flex;
+    justify-content: center;
+  }
+  margin: 0 auto;
+  & li {
+    position: relative;
+    align-self: center;
+    margin: 18px 3px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 7px;
+    font-family: Lexend,sans-serif !important;
+    color:white;
+    @include mobile{
+      padding: 0;
+    }
+    
+  }
+}
+.item{
+  cursor: pointer;
+}
+.active{
+  background-color: $theme_light_black_color !important;
+  & a{
+  color: #C83E93 !important;
+
+  }
+  padding: 7px !important;
+  font-weight: 500;
+  font-size: 18px;
+  @include mobile{
+    background-color: transparent !important;
+  }
+  border-radius: 5px;
+}
+
+.menu_container{
+  margin-left: auto;
+  display: flex;
+  flex: 2;
+  width: 100%;
+}
+.link{
+  color: white !important;
+  padding: 8px;
+  text-decoration: none !important;
+  font-weight: 500;
+  font-size: 16px;
+  &:hover{
+    background-color: $theme_light_black_color !important;
+    color: $theme_purple_btn !important;
+    border-radius: 5px;
+  }
+}
+
+
+.contents header {
+  width: 100%;
+  background-image: linear-gradient(0deg ,hsla(0,0%,100%,.04),hsla(0,0%,100%,.04))!important;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  box-shadow: none!important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 27px;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(18px)!important;
+  backdrop-filter: blur(18px)!important;
+  padding-bottom: 27px;
+  background: rgba(0,0,0,.2);
+}
+section.support{
+  @include mobile{
+  position: fixed;
+  background: #1b1b1b;
+  width: 264px!important;
+  border-radius: 0 20px 20px 0!important;
+  padding-top: 10px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1;
+  overflow-y: auto;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  }
+}
+.connectLogo span {
+  display: none;
+  @include mobile{
+    display: block;
+    width: 71px;
+    margin-left: 20px;
+  }
+}
+
+.connectLogo span img {
+  clear: both;
+  display: block;
+  margin: 0;
+}
+
+.connectLogo span img:last-child {
+  width: 40px;
+  float: right;
+  margin-top: 5px;
+}
+
+
+
+
+@include mobile{.menu_container {width: 100%;display: block;padding-top: 20px;}
+ul.menu{
+    margin: 0;
+}
+
+ul.menu * {
+    font-size: 20px;
+    font-weight: 200 !important;
+}
+
+ul.menu li.active {
+  padding-left: 8px;
+  background: #252525 !important;
+  margin: 0;
+  border-radius: 0;
+  padding-top: 10px;
+}
+
+ul.menu li li * {
+    font-size: 20px !important;
+}
+ul.menu li li button, ul.menu li li button *{font-weight: 500; color: #9bb0cf; align-items: center;}
+
+ul.menu li a {
+    padding-left: 8px;
+}
+  header.header.collapsed + .contents{  filter: blur(0px);}
+  header.header.collapsed:before {
+    display: none;
+  }
+  header.header.collapsed h1 + button{
+    filter: blur(0px);
+  }
+  header.header.collapsed + .contents:before {
+    display: none;
+  }
+  }
+
+  @include desktop {
+    .exchangeActive{
+      display: none;
+    } 
+    .exchangeActiveMinus, .pluMinus{
+      display: none;
+    }
+  }
+  
+  @include mobile{
+    .pluMinus{
+      display: inline;
+      cursor: pointer;
+      span{display: none;}
+    }
+    li.active{padding-left:10px !important;}
+    li.active > .pluMinus > span{ display: none;}
+    li.active > .pluMinus {display:inline;}
+    li.active > .pluMinus > span.exchangeActive{ display: inline-flex;}
+    .minusExchange{
+      margin-bottom: 7px;
+    }
+    .exchangeActive{
+      display: inline-flex !important;
+      margin-left: 15px;
+      border: 1px solid white;
+      color:white !important;
+    line-height: 19px;
+      width: 24px;
+      height: 24px;
+      justify-content: center;
+      border-radius: 18px;
+    }
+    li .ConnectButton.button {
+      padding-left: 7px;
+  }
+    .exchangeActiveMinus{
+      display: none;
+      margin-left: 15px;
+      border: 1px solid white;
+      color:white !important;
+      width: 24px;
+      height: 24px;
+      justify-content: center;
+      border-radius: 18px
+    }
+  }
+  .disconnect{
+    @include desktop{
+      display: none;
+    }
+  }             

@@ -1,0 +1,66 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.state {
+  div div section {
+    height: 100%;
+    padding-left: 15px;
+  }
+}
+
+.transakBtn {
+  padding: 8px 28px;
+  border-radius: 5px;
+  color: black;
+  font-weight: 400;
+  background-color: #c83e93;
+}
+.assetsValue {
+  min-height: 83px;
+}
+.swapBox {
+  margin-top: 30px;
+}
+.swapBoxHide {
+  display: none;
+}
+.stateSwap {
+  max-width: 420px;
+  min-width: 420px;
+  @include mobile {
+    max-width: calc(100% - 30px);
+    min-width: calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+}
+.swapContainer {
+  justify-items: center;
+}
+.stateSwap header + section {
+  padding-top: 0 !important;
+}
+.poolBox {
+  margin-top: 20px;
+}
+
+.chartI {
+  border: 1px solid white;
+  padding: 0px 4px;
+  font-size: 9px;
+  margin-right: 6px;
+  border-radius: 6px;
+}
+
+.chartMessage {
+  font-size: 11px;
+  float: right;
+  margin-top: 8px;
+}
+
+.trade_chart {
+  background: $theme_black_color;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: $border-radius;
+  position: relative;
+  overflow: hidden;
+}

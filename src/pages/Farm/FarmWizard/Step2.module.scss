@@ -1,0 +1,59 @@
+@import "../../../styles/mixins";
+
+.component {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 18px;
+  margin-top: 100px;
+  justify-items: center;
+  justify-content: center;
+
+  & > *{
+    text-align: center;
+  }
+}
+.content{
+  padding: 10px 60px 60px 60px;
+}
+.container{
+  max-width: 700px;
+  width: 700px;
+  margin: 0 auto;
+  @include mobile{
+    padding: 10px !important;
+    max-width: 100%;
+    width: auto;
+  }
+  .title{
+    display: flex;
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .closeCard{
+    width: 5%;
+  }
+}
+.form{
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0 auto;
+
+  h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  .msg{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #BBBBBB;
+  }
+}

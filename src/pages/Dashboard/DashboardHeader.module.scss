@@ -1,0 +1,142 @@
+@import "../../styles/mixins";
+
+.stat_container {
+  flex-direction: column;
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.card_main {
+  padding: 20px $card-padding-horizontal;
+}
+.label {
+  font-weight: 400 !important;
+  white-space: nowrap;
+}
+.count {
+  font-size: 19px;
+}
+.price {
+  color: $input_text_color;
+}
+.label {
+  padding-left: 4px;
+}
+.dflex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.transactionDays {
+  margin-left: 8px !important;
+}
+.seprate {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+.footer {
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #bbbbbb;
+}
+.aprRange {
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #01cdfd;
+}
+.volume {
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #01cdfd;
+  padding-left: 6px !important;
+}
+.volumeLabel {
+  padding-left: 6px !important;
+}
+.volumetitle {
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+
+  color: #9bb0cf;
+}
+.totalPairs {
+  display: flex;
+}
+@include mobile {
+  .totalPairs {
+    display: none;
+  }
+  .CzcardGrid:last-child {
+    display: none;
+  }
+}
+.CzcardGrid .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.CzcardGrid * {
+  margin: 0;
+  padding: 0;
+}
+.CzcardGrid {
+  margin: 0;
+  padding: 0;
+  min-height: 133.2px;
+}
+.CzcardGrid section {
+  width: 100%;
+  padding: 0 15px;
+}
+.CzcardGrid section section {
+  padding-left: 0;
+}
+.CzcardGrid i {
+  margin-left: 5px;
+}
+.blankSwapContainer{
+  @include desktop{
+    height: 360px;
+  }
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.loading{
+  width: 100px;
+  animation-duration: 2s;
+}

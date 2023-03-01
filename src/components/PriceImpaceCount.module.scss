@@ -1,0 +1,12 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.flex {
+  @include flex(flex-start);
+}
+.price{
+  color: white;
+}
+.red{
+  color: $red;
+}

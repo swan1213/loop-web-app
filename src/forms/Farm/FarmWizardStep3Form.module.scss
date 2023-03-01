@@ -1,0 +1,120 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.NewpoolLiquidityLeft{
+  display: flex;
+  justify-content: space-between;
+  @include mobile{
+    flex-direction: column;
+  }
+}
+.NewpoolLiquidityLSET{
+  width: 43%;
+  @include mobile{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.NewpoolLiquidityInner{margin:0;}
+.NewpoolLiquidityInner label{
+  background: #1b1b1b;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 10px;
+  border: 4px solid #2d2d2d;
+  cursor: pointer;
+  position: relative;
+}
+.header{
+  padding: 10px 30px !important;
+}
+.NewpoolLiquidityCenter button:before{content: '=';
+  font-size: 20px;
+  position: absolute;
+  left: 9px;
+  @include mobile{
+    display: none !important;
+  }
+  button{
+    @include mobile{
+      display: none !important;
+    }
+  }
+}
+.NewpoolLiquidityInner label:before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #383838;
+  right: 10px;
+  @include mobile{
+    border: none;
+  }
+}
+.NewpoolLiquidityInner span{
+  margin-right: 10px;
+}
+.NewpoolLiquidityInner span img{display: block;}
+.NewpoolLiquidityInner p{
+  color: #919191;
+  font-weight: 100;
+  font-size: 11px;
+}
+.NewpoolLiquidityInner h5{
+  font-size: 19px;
+  color: white;
+  line-height: initial;
+}
+.NewpoolLiquidityInner ul{
+  background: #2d2d2d;
+  border-radius: 10px;
+  margin-top: 2px;
+  display: none;
+}
+.NewpoolLiquidityInner li{
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.NewpoolLiquidityInner li span{
+  margin-right: 10px;
+}
+.NewpoolLiquidityInner li img{margin: 0;}
+.NewpoolLiquidityInner li h5{font-weight: 100;}
+.poolPercentage{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.NewpoolLiquidityCenter{
+  position: relative;
+  border-left: 1px solid #2d2d2d;
+  margin: 0 35px;
+}
+.NewpoolLiquidityCenter button{
+  position: absolute;
+  bottom: 10px;
+  left: -15px;
+  background: #2d2d2d;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: #999999;
+  border-radius: 100px;
+  font-weight: 100;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mobile{
+    display: none;
+  }
+}

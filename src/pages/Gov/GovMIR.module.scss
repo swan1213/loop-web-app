@@ -1,0 +1,84 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.component {
+  text-align: center;
+}
+
+.logo {
+  @include flex;
+  display: inline-flex;
+  // background: $bg;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  align-self: center;
+}
+.logo_container{
+  align-self: center;
+  padding: 10px 40px;
+  border: 4px solid $theme_black_border_color;
+  border-radius: 10px;
+  margin: 0px;
+}
+
+.title {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.apr {
+  color: $blue;
+  font-size: 25px;
+}
+.loop{
+  font-size: 20px;
+  color: $white;
+}
+
+.desc {
+  color: $battleship;
+  font-size: 12px;
+}
+
+.button {
+  margin-top: 30px;
+  min-width: 160px;
+  padding: 25px;
+  background-color: $theme_light_purple_btn !important;
+  border: 1px solid $theme_light_purple_btn !important;
+
+  &:hover {
+    background-color: $theme_dark_purple_btn !important;
+    border: 1px solid $theme_dark_purple_btn !important;
+  }
+  margin-bottom: 10px;
+}
+
+.body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 40px;
+
+  @include mobile{
+    flex-direction: column;
+    margin: 20px 0;
+  }
+}
+.stake{
+  flex-direction: column;
+  //align-self: center;
+  margin: 0;
+}
+.staked_loop, .stakable{
+  flex-direction: column;
+  margin: 0;
+}
+.stakable{
+  align-self: center;
+}
+.stakable_row{
+  margin: 0;
+}

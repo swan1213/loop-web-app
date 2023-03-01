@@ -1,0 +1,28 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.card {
+  box-shadow: none;
+}
+.cardMini{
+  box-shadow: none !important;
+  .main{
+    display: none;
+  }
+  border-radius: 0 !important;
+}
+.airdropBox{
+  margin-top:250px
+}
+@media only screen and (max-width: 768px) {
+  .airdropBox{
+    margin-top:45px
+  }
+}
+.fee{
+  display: flex;
+  flex-direction: row;
+}
+.approx{
+  content: "\2245";
+}

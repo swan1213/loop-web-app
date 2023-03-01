@@ -1,0 +1,23 @@
+@import "../styles/mixins";
+
+.header {
+  @include flex(flex-start);
+}
+
+.value {
+  color: white;
+  font-size: 20px;
+}
+
+.change {
+  font-size: 12px;
+  margin-left: 10px;
+}
+.chart {
+  height: 270px;
+  @include mobile{
+    height: 298px;
+  }
+}
+
+.CzheaderGraph{padding:0;}
