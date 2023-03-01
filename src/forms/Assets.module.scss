@@ -1,0 +1,60 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.component {
+  @include flex;
+  align-items: stretch;
+  max-height: 175px;
+  // height: 300px;
+}
+
+/* search */
+.search {
+  @include flex(flex-start, stretch);
+  flex: none;
+  margin-bottom: 5px;
+
+  background: fade-out($bg, 0.5);
+  border-radius: 5px;
+  height: 40px;
+
+  label {
+    @include flex;
+  }
+
+  i {
+    margin: 0 15px;
+  }
+
+  input {
+    flex: 1;
+  }
+}
+
+/* feedback */
+.feedback {
+  text-align: center;
+}
+
+/* assets */
+.list {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.button {
+  padding: 5px;
+  width: 100%;
+  &.selected,
+  &:not(.disabled):hover {
+    background: fade-out(white, 0.95);
+  }
+
+  &.disabled {
+    opacity: 0.3;
+  }
+}
+
+.dim {
+  opacity: 0.3;
+}

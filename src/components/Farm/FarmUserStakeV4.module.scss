@@ -1,0 +1,233 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.main {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  padding: 18px 10px 10px 15px !important;
+  height: 100%;
+}
+.container{
+  background-color: rgba(0, 0, 0, 0.06) !important;
+}
+.slim{
+  max-height: 260px;
+  @include desktop{
+    max-height: 80px;
+  }
+}
+.timeLeft{
+  color: $theme_light_purple_btn;
+  font-weight: bold;
+}
+.collapsed_mobile_icon{
+  display: none;
+  height: 20px !important;
+  @include mobile{
+    display: flex;
+  }
+}
+.symbol_title{
+  padding: 10px;
+}
+.collapsedIcon{
+  @include mobile{
+    display: none;
+  }
+}
+.selection{
+  align-items: center;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  justify-content: center;
+  background-color: black;
+  border-radius: 10px;
+  flex-direction: row;
+
+  @include desktop{
+    width: 190px;
+    max-height: 60px;
+  }
+  @include mobile{
+    height: 60px;
+  }
+}
+.selection_closed{
+  @include desktop{
+    max-height: 60px;
+  }
+}
+.stake_container{
+  display: flex;
+  cursor: pointer;
+
+  & > * {
+    flex: 1 1 auto;
+    margin: 8px;
+    @include desktop{
+      width: 20%;
+    }
+  }
+  & h3{
+    font-weight: 400 !important;
+    font-size: 14px;
+    font-style: normal;
+  }
+}
+
+.cell{
+  flex-direction: column;
+  @include mobile{
+    flex-direction: row;
+    .row {
+      margin-top: 0 !important;
+    }
+  }
+  & > * {
+    margin: 0 6px;
+    @include mobile{
+      margin: 0;
+    }
+  }
+}
+.maxCell{
+  flex: 6 1 auto;
+}
+.row{
+  flex-direction: row !important;
+/*  .content{
+    flex-direction: row !important;
+  }*/
+}
+.mobile_cell{
+  @include mobile{
+    flex-direction: row;
+  }
+}
+
+.stake_btn{
+  flex-direction: column;
+  margin: 5px !important;
+  padding: 0;
+  & button{
+    margin: 5px !important;
+    height: auto !important;
+    padding: 8px;
+  }
+  @include mobile{
+    display: none !important;
+  }
+}
+
+.expanded{
+  display: flex !important;
+  margin: 0;
+}
+.closed{
+  display: none !important;
+  margin: 0;
+}
+.cell:last-child{
+  width: 20px;
+}
+
+.content{
+  margin: 0;
+  flex-direction: column;
+}
+.stakebtn{
+  display: flex;
+  flex-direction: column;
+}
+.expand_icon{
+  height: 20px !important;
+  margin: 0;
+  cursor: pointer;
+}
+.smBtn{
+  padding: 2px !important;
+  color: black !important;
+  font-size: 21px !important;
+  @include desktop{
+    flex: 1;
+  }
+}
+.comboBtnContainer{
+  width: 220px !important;
+  @include desktop{
+    width: 190px !important;
+  }
+  button{
+    min-width: auto !important;
+  }
+}
+.harvestBtn{
+  @include desktop{
+    flex: 3;
+  }
+}
+.stake_unstake_btn{
+@include purple_btn;
+  max-width: 220px;
+  width: 220px;
+  color: black !important;
+  text-transform: capitalize !important;
+  font-weight: normal !important;
+  @include desktop{
+    max-width: 190px;
+    width: 190px;
+  }
+  &.disabled {
+    background: $theme_black_border_color !important;
+    color: $disabledColor !important;
+  }
+}
+.symbol, .logo{
+margin: 0 !important;
+  margin-left: 2px !important;
+}
+.symbol{
+flex: 3;
+}
+.icon{
+flex: 1;
+margin: 0 !important;
+}
+.selection_button{
+margin: 0;
+flex: 1 auto;
+}
+.value{
+color: $theme_light_blue_color !important;
+font-weight: bold;
+}
+.price{
+font-size: 19px !important;
+}
+.icontable{
+display: flex;
+align-items: center;
+margin: 5px !important;
+  font-family: Lexend;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+}
+.icontableHub{
+display: flex;
+margin-right: 3px;
+}
+.icontableHub {
+img{
+margin-left: -5px; display: inline-block;
+}
+}
+.icontable p{font-weight: 100;}
+
+.grid{
+display: flex;
+flex-direction: row;
+margin: 0;
+}

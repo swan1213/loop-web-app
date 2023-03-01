@@ -1,0 +1,11 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="40" cy="40" r="40" fill="#1B1B1B"/>
+<path d="M28 52C34.6274 52 40 46.6274 40 40C40 33.3726 34.6274 28 28 28C21.3726 28 16 33.3726 16 40C16 46.6274 21.3726 52 28 52Z" stroke="#01CDFD" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M28 46C31.3137 46 34 43.3137 34 40C34 36.6863 31.3137 34 28 34C24.6863 34 22 36.6863 22 40C22 43.3137 24.6863 46 28 46Z" stroke="#01CDFD" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M52 46C55.3137 46 58 43.3137 58 40C58 36.6863 55.3137 34 52 34C48.6863 34 46 36.6863 46 40C46 43.3137 48.6863 46 52 46Z" stroke="#01CDFD" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M52 52C58.6274 52 64 46.6274 64 40C64 33.3726 58.6274 28 52 28C45.3726 28 40 33.3726 40 40C40 46.6274 45.3726 52 52 52Z" stroke="#01CDFD" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M37.4004 29H42.4004" stroke="#01CDFD" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M31 24H49" stroke="#01CDFD" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M31 56H49" stroke="#01CDFD" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M37.4004 51H42.4004" stroke="#01CDFD" stroke-width="1.5" stroke-miterlimit="10"/>
+</svg>

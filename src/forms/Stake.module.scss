@@ -1,0 +1,65 @@
+@import "../styles/mixins";
+
+.claim {
+  margin-left: 0 !important;
+}
+.action_stats{
+  flex: 3;
+  @include mobile{
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.formAction{
+  align-items: center;
+  margin-top: 15px;
+  & > * {
+    margin: 0 !important;
+  }
+  @include mobile{
+    flex-direction: column-reverse;
+  }
+}
+.flex{
+  display: flex;
+}
+.CZflex{ display: flex; align-items: center;}
+.buttonTxt{
+  text-transform: uppercase !important;
+}
+.distributed_day{
+  flex: 2 1;
+  flex-direction: column;
+  & > * {
+    margin: 0 !important;
+    font-weight: normal;
+  }
+}
+.apr{
+  flex: 1;
+  margin: 0 !important;
+  flex-direction: column;
+  align-self: center;
+  & > * {
+    margin: 0 !important;
+    font-weight: normal;
+  }
+}
+
+.submit{
+  flex-direction: row;
+  flex: 1;
+  & .submitBtn{
+    @include purple_btn;
+    @include mobile{
+      margin: 0;
+    }
+  }
+  @include mobile{
+    width: 100%;
+  }
+}
+.pricing{
+  font-size: 19px !important;
+}

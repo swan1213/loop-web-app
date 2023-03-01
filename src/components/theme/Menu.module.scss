@@ -1,0 +1,174 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+$padding: 15px;
+
+.menu {
+  padding: 10px;
+  @include mobile{
+    padding: 6px;
+  }
+}
+.ext_menu {
+  border-top: solid 1px #3c3735;
+  margin-top:10px;
+}
+.sm_menu{
+  @include desktop{
+    display: none;
+  }
+  display: block;
+
+  & a{
+    padding: 0;
+  }
+}
+
+
+.link {
+  vertical-align: text-bottom;
+  margin-right: 19px;
+      @include desktop{
+        &:hover,
+        &.active {
+          color: #c83e93;
+      img:nth-child(2){opacity: 1;}
+      img{opacity: 0;}
+      }
+       *{ transition: all .3s ease-in-out;
+  }}  
+
+  @include small_screen {
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  /*@include mobile {
+    font-size: 14px;
+    line-height: 2;
+  }*/
+  color: #9bb0cf;
+  font: 400 13px Lexend, "Source Sans Pro", Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+  padding-left: 8px;
+  display: flex;
+  align-content: center;
+  cursor: pointer;
+}
+
+
+
+
+.item {
+  .submenu {
+    display: none;
+  }
+
+  &:hover .submenu {
+    display: block;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  text-transform: none !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+.icon {
+  margin-right: 20px;
+}
+.connect{
+  padding: 0 8px;
+  align-items: center;
+}
+.connected{
+  &:hover{
+    color: #93336e;
+  }
+}
+a.link.active {
+  color: #b93b88;
+}
+
+a.link.active img {
+  display: none;
+}
+
+a.link.active img:nth-child(2) {
+  display: block !important;
+  opacity: 1;
+  position: initial;
+  margin-right: 20px;
+}
+.CzConnectWallet{width: calc(100% - 40px);
+  max-width: 500px;
+  z-index: 2;
+  /* position: fixed; */
+  /* transform: translate(-50%, -50%); */
+  /* top: 50%; */
+  /* left: 50%; */
+  background: #1B1B1B;
+  box-shadow: 0px 4px 60px rgba(244, 110, 193, 0.7);
+  border-radius: 15px;
+  text-align: center;
+  padding: 48px 88px;
+  margin: 150px auto 0;
+  @include mobile{
+  padding: 30px;
+  margin: 0 auto;
+  }}
+.CzConnectWallet p{    color: white;
+  margin: 15px 0;}
+.CzConnectWallet h6{font-size: 19px;
+  color: white;
+  font-weight: 400;}
+
+.disconnected{
+  &:hover{
+    color: $theme_green_color;
+  }
+}
+.toggle_icon{
+  cursor: pointer;
+}
+.connection_required_info{
+  font-size: 15px;
+  font-weight: normal;
+}
+.desktop_only{
+  display: block;
+  @include mobile{
+    display: none;
+  }
+}
+.connection_btn {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @include mobile{
+    display: flex;
+  }
+  & button {
+    display: flex;
+    margin: 0 auto !important;
+    margin-top: 10px !important;
+  }
+}
+
+  ul li a .iconAct{position: absolute;
+    opacity: 0;
+  }
+
+.mob_disconnect{
+  @include desktop{
+    display: none;
+  }
+}
+
+
+.pylonLink{
+  text-decoration: none !important;
+}

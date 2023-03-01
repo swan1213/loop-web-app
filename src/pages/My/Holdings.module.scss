@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+.header{
+  padding: 10px 20px;
+  border-bottom: 1px solid $hr;
+  box-shadow: inset 0 -1px $hr-shadow;
+}
+.value{
+  color: $theme_light_purple_btn;
+  font-weight: 600;
+}
+.poolToolTip{color: #fff;
+  font-weight: 600;}
+
+.holdingtext{
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    color: #a0a0a0;
+    font-size: 16px;;
+  }
+  .tranLink{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .withDrawableValue{
+    text-align: right;
+  }
+  

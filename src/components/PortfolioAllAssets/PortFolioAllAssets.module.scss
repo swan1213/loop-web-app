@@ -1,0 +1,97 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.assetsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  background: $theme_light_black_color;
+
+  box-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+  border-radius: 15px;
+  max-width: 550px;
+  width:550px;
+  height: 270px;
+  padding: 4px;
+  padding-top: 10px;
+  @include mobile {
+    width: 100%;
+  }
+  .imageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .coinImage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      background-color: black;
+      border-radius: 50px;
+      vertical-align: middle;
+    }
+  }
+
+  .valuesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    .itemWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      .Style{
+        font-family: Lexend;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        text-transform: capitalize;
+        padding-left:4px
+
+      }
+      .textStyle {
+        font-family: Lexend;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        text-transform: capitalize;
+
+        color: #01cdfd;
+      }
+      .dflex{
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+      }
+    }
+  }
+}
+
+
+.assetsContainerLoading {
+  display: flex;
+  justify-content: flex-start;
+  
+  .imageWrapper{
+    width: 20%;
+  }
+  .imageWrapperChart{
+    width: 30%;
+  }
+  .valuesContainer{
+    width: 70%;
+  }
+   .imageWrapper , .valuesContainer{
+    margin: 10px;  
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,105 @@
+@import "../styles/mixins";
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 0;
+}
+.info{
+  font-size: 25px;
+  color: white;
+  align-self: center;
+  font-weight: 400;
+}
+.apr{
+  font-weight: 700;
+  font-size: 18.75px !important;
+  color: rgb(50, 254, 154);
+}
+.apr_section{
+  font-size: 14.75px !important;
+}
+.polygon_icon{
+  height: 15px;
+}
+.strong{
+  color: $theme_purple_btn;
+}
+.infoSwitch{width: 115px;
+  margin: 0 auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  .infoSwitch svg{opacity: 0;}
+div h4:last-child {
+  margin-bottom: 0 !important;
+}
+div h4 {
+  margin: 0 0 40px !important;
+}
+.farmBox{
+  margin: 170px auto 0;
+  padding: 0 30px;
+  max-width: 1260px;
+  /* height: 85vh; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* width: 100%;*/
+  @include mobile{
+    margin: 0 auto;
+  }
+  >div{background-color: #1b1b1b;
+    border-radius: 15px}
+  h6{
+    font-size: 19px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+  p{
+    color: white;
+    margin: 15px 0;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 50px;
+  }
+}
+
+.farmBox .container {
+  display: block;
+  justify-content: center;
+  flex-direction: unset;
+  padding: 30px 0;
+  height: 100%;
+  align-items: center;
+  margin: 0;
+}
+@include mobile {
+.farmBox{
+  padding: 0 10px;
+  p{padding:0;}
+}
+.farmBox  div{margin-left:0;margin-right:0;}
+}
+
+.showFarmingModal{
+  display: block;
+}
+.hideFarmingModel{
+  display: none;
+}
+.claim_farming_container{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.claim_farming_btn{
+  padding: 22px;
+  font-size: 16px;
+}

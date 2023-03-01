@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.encourage {
+  color: $battleship;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.stake_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

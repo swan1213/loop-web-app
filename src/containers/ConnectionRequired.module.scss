@@ -1,0 +1,26 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.button {
+  display: flex;
+  align-self: center;
+  @include purple_btn;
+  color: black !important;
+  border-radius: 5px;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  border: none !important;
+  height: 100px !important;
+  padding: 5px 20px !important;
+  width: fit-content !important;
+}
+.blankGrid{
+  flex: 1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2 !important;
+  font-size: 14px;
+}

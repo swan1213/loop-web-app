@@ -1,0 +1,76 @@
+@import "../styles/mixins";
+
+$padding: 20px;
+
+.component {
+  // height: 100%;
+  background: $theme_black_color;
+  border-radius: 20px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include mobile {
+    margin-top: 0px;
+  }
+}
+
+.header {
+  @include desktop {
+    @include flex(space-between);
+  }
+
+  padding: $padding;
+  padding-top: 22px;
+  padding-bottom: 26px;
+}
+
+.token {
+  @include flex(flex-start);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.symbol {
+  color: $battleship;
+  margin-right: 5px;
+}
+
+.price {
+  margin-left: 5px;
+}
+
+.ranges {
+  background-color: rgba(45, 45, 45, 0.5);
+  padding: 2px;
+  border-radius: 10px;
+  @include mobile {
+    margin-top: 10px;
+  }
+
+  .button:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.button {
+  @include transition;
+
+  border-style: solid;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+
+  &.active {
+    background-color: $theme_black_color;
+    border-color: white;
+    color: white;
+  }
+}
+
+.description {
+  padding: $padding;
+  padding-top: 0;
+}

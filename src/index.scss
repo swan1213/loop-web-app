@@ -1,0 +1,43 @@
+@import "./styles/mixins";
+@import "./styles/variables";
+@import "./styles/reboot";
+@import "./styles/colors";
+@import "./styles/utils";
+
+
+
+
+@font-face {
+  font-family: "shapiro75_heavy_extd";
+  src: url("/fonts/shapiro-75heavyextd.woff2") format("woff2"),
+    url("/fonts/shapiro-75heavyextd.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "shapiro65_light_heavy_wide";
+  src: url("/fonts/shapiro-65lightheavywide.woff2") format("woff2"),
+    url("/fonts/shapiro-65lightheavywide.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.swapIconContainer{
+  display: flex;justify-content: center;
+  align-items: center;
+
+}
+
+.swapIcon{
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  padding-top: 20px;
+  padding-right: 25px;
+  margin-top: 20px;
+}
+
+.tippy-content{
+    padding: unset !important;
+  }

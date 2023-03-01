@@ -1,0 +1,93 @@
+@import "variables";
+.Tooltip_flex__1ksLY button.Tooltip_button__nuvOv,
+.Tooltip_flex__1ksLY {
+  color: #9bb0cf;
+}
+.DashboardHeader_price__1UrpP {
+  font-weight: 700;
+}
+.Price_price__2yiXC {
+  font-weight: normal;
+  position: relative;
+  top: 2px;
+}
+.GovHomeHeader_lg__ORCpY .Tooltip_flex__1ksLY {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.GovHomeHeader_lg__ORCpY span.Price_price__2yiXC span.Price_value__296GD {
+  color: #c83e93;
+  font-weight: 700;
+  margin-left: 10px;
+}
+@mixin desktop {
+  @media (min-width: ($breakpoint)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $breakpoint - 0.02) {
+    @content;
+  }
+}
+
+@mixin small_screen {
+  @media (min-width: 992px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin flex($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin link($initial: fade-out(white, 0.5), $hover: white) {
+  @include transition(color);
+  color: $initial;
+
+  &:hover,
+  &.active {
+    // color: $hover;
+    color: #c83e93;
+  }
+}
+
+@mixin button {
+  text-transform: uppercase;
+}
+
+@mixin transition($property: all) {
+  transition: $property $transition-duration;
+}
+
+/* app */
+@mixin app {
+  font-size: $font-size;
+
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: $footer-height;
+
+  @include mobile {
+    padding-bottom: $footer-height-mobile;
+  }
+}
+
+@mixin purple_btn {
+  background-color: $theme_light_purple_btn !important;
+  border: none !important;
+  &:hover {
+    background-color: $theme_dark_purple_btn !important;
+    border: none !important;
+  }
+}
+
+
+@mixin placeholder-height($height: 25px) {
+  height: $height !important;
+}

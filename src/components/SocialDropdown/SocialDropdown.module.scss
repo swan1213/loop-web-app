@@ -1,0 +1,91 @@
+@import "../../styles/mixins";
+
+.socialDropdown {
+  background: #1b1b1b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  // z-Index: 5;
+  position: relative;
+  padding: 10px;
+  transform: translateY(0);
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
+  @include mobile {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.invisibleDiv {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  @include mobile {
+    display: none;
+  }
+}
+
+.list {
+  padding: 10px 0;
+}
+.title {
+  width: 45px;
+  height: 13px;
+
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-around;
+  opacity: 1;
+  cursor: pointer;
+
+  color: #ffffff;
+  @include mobile {
+    display: none;
+  }
+}
+.socialLink {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+  cursor: pointer;
+  img {
+    width: 18px;
+    @include mobile {
+      width: 30px;
+    }
+  }
+}
+.btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 113px;
+  height: 36px;
+  top: -1308px;
+  left: 35876px;
+  border-radius: 6px;
+  background: #1b1b1b;
+
+  box-sizing: border-box;
+  border-radius: 6px;
+  @include mobile {
+    display: none;
+  }
+  img {
+    width: 18px;
+  }
+}

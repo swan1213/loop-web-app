@@ -1,0 +1,56 @@
+@import "../../styles/mixins";
+
+.rank {
+  color: $battleship;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.link {
+  @include link(white, $blue);
+}
+.simpleLink{
+  background-color: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  color: $white !important;
+  min-width: 0 !important;
+  text-decoration: none !important;
+  text-transform: none !important;
+  font-size: 16px;
+  font-weight: 600;
+}
+.placeholder{
+  padding: 10px;
+  color: transparent;
+  text-shadow: -13px 0 5px $theme_purple_btn_dim;
+}
+.placeholderWhite{
+  padding: 10px;
+  color: transparent;
+  text-shadow: -13px 0 5px white;
+}
+
+.icontable{    display: flex;
+  align-items: center;}
+.icontableHub{
+  margin-right: 20px;
+  margin-left: 10px;
+  width: 40px;
+  display: flex;
+  min-height: 28px;
+}
+.icontableHub {
+  img{
+    margin-left: -5px; display: inline-block;
+  }
+}
+.icontable p{font-weight: 100;}
+
+.apyTooltip {
+  padding: 0 !important;
+}
+.blue{
+  color: #32FE9A !important;
+  font-weight: bold;
+}

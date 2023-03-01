@@ -1,0 +1,19 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.price{
+  margin-right: 5px;
+  color: $theme_light_blue_color;
+}
+.timeLeft{
+  color: $theme_light_blue_color;
+}

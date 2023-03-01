@@ -1,0 +1,48 @@
+@import "../styles/mixins";
+
+.flex {
+  @include desktop {
+    @include flex(space-between, flex-start);
+  }
+}
+.v2Container{
+  margin: 0 0 10px 0;
+}
+.content {
+  @include desktop {
+    flex: 1;
+  }
+  margin: 10px;
+}
+
+.chart {
+  @include desktop {
+    flex: 1;
+  }
+  margin: 10px;
+  align-self: flex-start;
+}
+
+
+.your_liquidity_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg{
+  font-weight: normal;
+  text-align: center;
+  margin: 20px;
+  @include mobile {
+      margin: 20px 0;}
+}
+@include mobile {
+  .msg br{display: none;}
+    }
+
+
+    .childPool > div{
+      margin-bottom:15px;
+    }

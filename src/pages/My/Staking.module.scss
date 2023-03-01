@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.header{
+  padding: 10px 20px;
+  border-bottom: 1px solid $hr;
+  box-shadow: inset 0 -1px $hr-shadow;
+}
+.d_flex{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    img{
+      height: 40px;
+      width: 40px;
+    }
+}
+.p_right{
+    padding-right:52px
+}
+.pl10{
+    padding-left: 8px;
+}
+.staking_ratio{
+    padding-left: calc(50% - 29px/2 - 19px);
+}
+.value{
+  color: $theme_light_purple_btn;
+  font-weight: 600;
+}
+.poolToolTip{color: #fff;
+  font-weight: 600;}
+
+.holdingtext{
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    color: #a0a0a0;
+    font-size: 16px;;
+  }
+  .tranLink{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .withDrawableValue{
+    text-align: right;
+    color: red !important;
+  }
+  

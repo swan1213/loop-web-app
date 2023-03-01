@@ -1,0 +1,42 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+$radius: 10px;
+
+.tabs {
+  @include flex;
+}
+
+.tab {
+  @include flex;
+  @include link;
+
+  flex: 1;
+  color:white !important;
+  font-size: 18px;
+  font-weight: 500;
+  height: 60px;
+  text-transform: capitalize;
+
+  &:only-child {
+    height: unset;
+    margin-top: 30px;
+  }
+
+  &.active {
+    border-bottom: 1px solid $darkblue;
+  }
+
+  &:not(.active) {
+    background: $saturated-blue;
+    border-bottom: 1px solid $theme_black_color;
+  }
+
+  & + & {
+    border-left: 1px solid $theme_black_color;
+  }
+}
+
+.content {
+  padding: 30px 25px;
+}

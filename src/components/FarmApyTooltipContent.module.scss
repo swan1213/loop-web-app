@@ -1,0 +1,36 @@
+@import "../styles/mixins";
+
+
+.tolBox{
+    padding:10px;
+        background-color: #353C49;
+        //  border-radius: 8px;
+         width: 250px;
+        height: auto;
+        .d_flex_col{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+
+            h3{
+                color: white !important;
+            }
+            .d_flex_row{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: flex-start;
+                & *{
+                    margin-right: 5px;
+                }
+            }
+        }
+        .pt10{
+            padding-top: 10px;
+        }
+    .blue{
+        color: #32FE9A !important;
+        font-weight: bold;
+    }
+}

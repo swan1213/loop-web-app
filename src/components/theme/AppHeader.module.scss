@@ -1,0 +1,223 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.header {
+  position: fixed;
+  max-height: 100vh;
+  overflow: auto;
+    width: 193px;
+    list-style: none;
+    /*background-color: #22283d;
+    box-shadow: 0 4px 20px rgba(0,0,0, .3);*/
+    margin-left: 40px;
+    float: left;
+
+  @media (max-width: 1200px) and (min-width: 991px) {
+   
+  }
+  @media (max-width: 1330px) and (min-width: 1200px) {
+    
+  }
+  @include mobile {
+    display: none !important;
+    margin-left: 0;
+  }
+}
+@media (max-height: 790px) {
+  .header{position:sticky !important;     max-height: inherit !important;
+      height: initial !important;}
+  }
+.navWrap a{position: relative;}
+.navWrap a:hover img{opacity: 0;}
+.navWrap a:hover img:nth-child(2){opacity: 1;}
+.headerSize{
+  min-height: 790px;
+  height: 100em;
+}
+.title{
+  font-family: Lexend;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+.socialBtn{
+  width: 102px;
+height: 34px;
+left: 994px;
+top: 30px;
+
+background: #1B1B1B;
+border-radius: 5px;
+}
+
+.logoHead{background: #1b1b1b;
+  border-radius: 20px;
+  margin-top: 195px;
+  transition: all 0.5s ease-in-out;
+}
+.toggle_header {
+  width: 63px;
+  margin-left: 0;
+  padding-right: 10px;
+}
+.toggle_header + div {
+  width: calc(100% - 65px);
+  transition: all .5s ease-in-out;
+  }
+.dropdownSection ul {
+  padding: unset !important;
+  margin-top: 248px !important;
+  height: 230px !important;
+}
+ 
+.toggle_header ul li a, .toggle_header ul li button, .toggle_header ul li button img {padding-left:3px !important}
+header ul{ overflow: hidden;}
+header ul li span{white-space: nowrap;font-weight: 700;
+  font-size: 14px;
+}
+.toggle_header .logoHead{border-radius:0 15px 15px 0!important;}
+.toggle_header .logo_link img:first-child{transform: scale(1.4);}
+.headerTop{
+  background-color: green;
+  margin-top:10px;
+}
+.button.ui.button.sidebarToggle, .page-sidebar, .page-sidebar *, header {
+  transition: all .5s ease-in-out;
+}
+// * {
+//   transition: all .5s ease-in-out;
+// }
+@include mobile {
+  .header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .collapsed {
+    position: sticky;
+  }
+}
+.toggle_header nav ul li button {
+  padding-left: 0 !important;
+}
+.container {
+  @include desktop {
+    @include flex(space-between);
+  }
+}
+
+.wrapper {
+  @include flex(space-between);
+}
+
+.logo {
+  @include flex;
+  height: $side-nav-height;
+}
+.logo_link{height: 96px;
+  transition: all 0.5s ease-in-out;}
+.logo_link {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 20px !important;
+  transition: all 0.5s ease-in-out;
+  & img {
+    align-self: center;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.beta {
+  height: 15px;
+  width: 42px !important;
+  display: flex;
+  align-self: flex-end !important;
+}
+.beta_sm {
+  height: 12px;
+  width: 35px !important;
+}
+.badge {
+  margin-left: 8px;
+}
+
+.toggle {
+  @include flex;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.support {
+  @include desktop {
+    @include flex;
+  }
+
+  @include mobile {
+    .collapsed & {
+      display: none;
+    }
+  }
+}
+
+.connect {
+  @include flex;
+  padding-left: 15px;
+  // display: none;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.hr {
+  margin: 0;
+}
+
+.navWrap {
+  background: $theme_black_color;
+  border-radius: 15px;
+  height: 70%;
+  // box-shadow: 0 2px 5px rgba(0, 0, 0, 1/ 70%);
+}
+
+.navWrapCollapsed {
+  border-radius: 0;
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
+
+.toggle_container {
+  background-color: #1b1b1b;
+  border-radius: 0 0 20px 20px;
+  width: 42px;
+  height: 40px;
+  text-align: center;
+  margin: 0 auto 15px;
+  cursor: pointer;
+  position: relative;
+  font-size: 0!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left:0;
+}
+.toggle_header .toggle_container{    width: 36px;
+  left: -5px;}
+  .toggle_header .toggle_container img{transform: rotate(
+    180deg
+    );}

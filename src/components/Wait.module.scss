@@ -1,0 +1,34 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.success {
+  color: $aqua;
+}
+
+.failure {
+  color: $red;
+}
+
+.hash {
+  color: $battleship;
+  font-size: 12px;
+  text-align: center;
+}
+
+.feedback {
+  text-align: center;
+  margin: 20px 0 40px;
+  overflow-wrap: break-word;
+}
+.continueBtn{
+  margin-top: 30px;
+}
+.loadingv2{
+  color: $theme_dark_purple_btn !important;
+}
+.headerV2{
+  padding: 5px 20px;
+}
+.cardHeaderV2{
+  box-shadow: none !important;
+}

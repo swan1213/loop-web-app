@@ -1,0 +1,32 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.container{
+  background: $theme_black_border_color;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 15px;
+  margin-top:10px;
+}
+.list{
+  background: $theme_black_border_color;
+  padding: 3px !important;
+}
+.tooltip{
+  color: $theme_light_blue_color !important;
+  text-align: left;
+  padding: 0 10px;
+  font-size: 13px;
+  cursor: auto;
+}
+.href{
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.price{
+  font-size: 15px !important;
+}
+.symbol{
+  font-size: 13px !important;
+}

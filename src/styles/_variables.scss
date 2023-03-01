@@ -1,0 +1,94 @@
+/* Colors */
+//$bg: #121a2f !default;
+$bg: #090a2b !default;
+$darkblue: #1b1b1b !default;
+$airdrop: #1a314c !default;
+
+$gray: #cccccc !default;
+$brown: #a0a0a0 !default;
+$darkbrown: rgba(69, 104, 126, 0.65) !default;
+$light: #f0f0f0 !default;
+$battleship: #b0bae2 !default;
+$slate: #47d7e2 !default;
+
+$white: white !default;
+$blue: #1eb2ff !default;
+$aqua: #47d7e2 !default;
+$red: #ef4f5a !default;
+$orange: #dd794a !default;
+$active: rgb(125, 46, 161) !default;
+$pink:#d8379a !default;
+
+$text: $gray;
+$button: white !default;
+//$header: $darkblue !default;
+$header: white !default;
+$saturated-blue: saturate(darken($darkblue, 2%), 6%);
+
+$colors: (
+  bg: $bg,
+  darkblue: $darkblue,
+  battleship: $battleship,
+  slate: $slate,
+  blue: $blue,
+  aqua: $aqua,
+  red: $red,
+  orange: $orange,
+);
+
+$hr-shadow: fade-out(black, 0.8);
+$hr: fade-out(white, 0.92);
+$border: 1px solid fade-out($slate, 0.8);
+$border-radius: 10px;
+
+/* Fonts */
+$font-size: 14px;
+$font-family: "Lexend";
+
+/* Sizes */
+$max-width: 1200px !default;
+$breakpoint: 992px;
+$gutter: 30px;
+$line-height: 1.5;
+$nav-height: 70px;
+$side-nav-height: 15%;
+$footer-height: 50px;
+$footer-height-mobile: 100px;
+
+$card-padding-horizontal: 30px;
+$card-padding-header: 20px $card-padding-horizontal;
+$card-padding-main: $card-padding-header;
+
+/* Transitions */
+$transition-duration: 0.2s;
+
+/* Z-indexes */
+$zindex-sticky: 1020;
+
+$theme_dark_black_color: #131313;
+$theme_black_color: #1b1b1b;
+$theme_light_black_color: #13131380;
+$theme_black_border_color: #2d2d2d;
+$theme_light_bg_black_color: rgba(27, 27, 27, 0.25);
+$theme_green_color:#0998B9;
+$theme_bule_color:#0998B9;
+// $theme_light_blue_color: #9bb0cf;
+$theme_dark_blue_color: #C83E93;
+$theme_light_blue_color: #d8379a;
+$theme_purple_btn: #C83E93;
+$theme_purple_btn_dim: #912d6a;
+$theme_dark_purple_btn: #d8379a;
+$theme_light_purple_btn: rgba(200, 62, 147, 1);
+$theme_dim: rgba(238, 233, 233, 0.55);
+$theme_dim_dark: rgba(162, 156, 156, 0.55);
+$disabledColor: #919191;
+
+$modal-width: 650px;
+$white-92: #ebebeb;
+
+
+//V2
+
+$input_text_color: #01CDFD;
+
+@import "../customize";

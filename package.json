@@ -1,0 +1,115 @@
+{
+  "name": "loop",
+  "version": "1.0.0",
+  "homepage": "https://tequila-graph.loop.markets/",
+  "author": "Loop",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@apollo/client": "^3.4.4",
+    "@material-ui/core": "^4.11.4",
+    "@sentry/react": "^6.7.1",
+    "@sentry/tracing": "^6.7.1",
+    "@terra-money/terra.js": "^3.0.2",
+    "@terra-money/wallet-provider": "^3.7.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^13.1.9",
+    "@tippyjs/react": "^4.2.5",
+    "@transak/transak-sdk": "^1.0.30",
+    "@types/chart.js": "^2.9.28",
+    "@types/classnames": "^2.3.1",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^14.17.8",
+    "@types/numeral": "^0.0.28",
+    "@types/ramda": "^0.27.44",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-modal": "^3.12.1",
+    "@types/react-router-dom": "^5.1.8",
+    "axios": "^0.21.1",
+    "bignumber.js": "^9.0.1",
+    "chart.js": "^2.9.4",
+    "classnames": "^2.3.1",
+    "d3-format": "^3.1.0",
+    "d3-time-format": "^4.1.0",
+    "date-fns": "^2.22.1",
+    "ethers": "^5.3.1",
+    "graphql": "^15.5.1",
+    "graphql-request": "^3.4.0",
+    "husky": "^6.0.0",
+    "js-cookie": "^3.0.1",
+    "lightweight-charts": "^3.8.0",
+    "lint-staged": "^11.0.0",
+    "numeral": "^2.0.6",
+    "prettier": "^2.3.1",
+    "query-string": "^7.1.1",
+    "ramda": "^0.27.1",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^2.11.1",
+    "react-dom": "^17.0.2",
+    "react-financial-charts": "^1.3.2",
+    "react-helmet": "^6.1.0",
+    "react-loader-spinner": "^4.0.0",
+    "react-modal": "^3.14.3",
+    "react-query": "^3.17.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-sound": "^1.2.0",
+    "react-spinners": "^0.11.0",
+    "react-swiper": "^0.1.5",
+    "react-switch": "^6.0.0",
+    "react-text-truncate": "^0.17.0",
+    "react-tradingview-widgets": "^1.0.1",
+    "recoil": "^0.3.1",
+    "sass": "^1.42.1",
+    "semantic-ui-react": "^2.0.4",
+    "source-map-explorer": "^2.5.2",
+    "styled-components": "^5.3.1",
+    "swiper": "^6.0.2",
+    "typescript": "~4.3.4",
+    "use-onclickoutside": "^0.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "import/no-anonymous-default-export": "off"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --no-semi --write"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": {
+    "semi": false
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^2.2.7",
+    "@types/react-helmet": "^6.1.2",
+    "@types/react-sound": "^1.2.3"
+  }
+}

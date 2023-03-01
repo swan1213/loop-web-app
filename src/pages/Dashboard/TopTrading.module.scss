@@ -1,0 +1,86 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.rank {
+  color: $battleship;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.link {
+  @include link(white, $blue);
+}
+.blue {
+  color: #32fe9a !important;
+  font-weight: bold;
+}
+.simpleLink {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  color: $gray !important;
+  & u {
+    color: $gray;
+  }
+}
+.placeholderBlue {
+  padding: 10px;
+  color: transparent;
+  text-shadow: -13px 0 5px #3db87c;
+}
+.icontable {
+  display: flex;
+  align-items: center;
+}
+.icontableHub {
+  margin-right: 20px;
+  margin-left: 10px;
+  width: 40px;
+  display: flex;
+  min-height: 28px;
+}
+.icontableHub {
+  img {
+    margin-left: -5px;
+    display: inline-block;
+  }
+}
+.icontable p {
+  font-weight: 100;
+}
+.simpleLink {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  color: $gray !important;
+  & u {
+    color: $gray;
+  }
+}
+
+.d_flex_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+  & * {
+    margin-right: 5px;
+  }
+}
+.expandBtn {
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+  color: $theme_dark_blue_color;
+
+  display: flex;
+  align-items: center;
+  border-bottom: 2px dashed $theme_dark_blue_color;
+  cursor: pointer;
+  width: fit-content;
+  padding: 2px;
+  margin-left: 10px;
+}

@@ -1,0 +1,19 @@
+@import "../styles/mixins";
+
+.container {
+  margin: 0 auto;
+  padding: 0 $gutter;
+  max-width: ($max-width + 2 * $gutter);
+  // max-width: 100%;
+}
+.sm {
+  max-width: 620px;
+  margin: 0 auto;
+}
+@include mobile {
+  .container {
+    padding: 0 10px;
+    overflow: hidden;
+    // max-width: 100%;
+  }
+}

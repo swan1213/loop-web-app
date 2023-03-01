@@ -1,0 +1,19 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<title>LOOPR</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m25.21 14.99c0 3.62-2.93 6.55-6.55 6.55c-1.9 0-3.62-0.81-4.82-2.11l-1.86-1.86c0 0 0.51-1.11 0.51-2.58c0-1.47-0.51-2.59-0.51-2.59h0.65c1-2.33 3.32-3.97 6.02-3.97c3.62 0 6.55 2.93 6.55 6.55zm-6.55-2.76c-1.53 0-2.76 1.24-2.76 2.76c0 1.53 1.24 2.76 2.76 2.76c1.53 0 2.76-1.24 2.76-2.76c0-1.53-1.24-2.76-2.76-2.76z" />
+		</clipPath>
+		<image  width="24" height="16" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAAAXNSR0IB2cksfwAABCpJREFUeJytU81PXFUUP/fjzcybGYbhQyntQImkYLVoJriQ+LGhNbWamgYTjYua6EIXjS7cuHPhH+DCaNxpYk1MtBs2CEaNTTGpiQuQWvtpkIJAhYFhvt57957r71LYdO29OTnvnXvv+Z3f+dCE9QJ2kYpCkiwGFIxBzipSo5p0CbomSCwoIWeGDhR/Of7IQ8eyQfqlQOoRSAdkVUp5ichNGbY/WmfX1uMqD06/5l2TPk2nyWK3qJUNKTzlyL3OxM/AaRp2AZ0ByNO4OxAlfHyr0TqYatODAm9xRpJEnyB3Rkl1VAvV3bLxl7hb2Th5wXV9N0EaPyEiVdCn4PBDPOoHiAIIub2Nb+2cHliu1Abmltap3C9cZy6zfyqYdKjIlcFyIKvSKiXUZ5GJGrsMIG241gsnrxgyffhXdG/FAKtBpyA5iGhaosWNKgWI52hvZ+OBfK4Je97hDgBEIFWHJjWhpf5epdTCPye/cRpRB7h0AiDjHhA6AthlsPpKCjGbyYsxpOADbnKJDdNmk93c3/Gd5Ur142eH+6ZKxfYRcH1HOVtm1ilWroz0PYlU/Ql/7AGiPcfS5xR6B/It2Hxte7ernZmeAsfiTiKoZMDHIiMtdpvL28m187/OX3/vxNiKs+phJ12vE9QnBGom5FBK6jaI1QklsU8BOkjBsUNBt8Hg4iRNVmmF6P3hN6pC06pS7BrshKmTlU5Wffpwz8ZsKqjDtHVqVEnugY80UjUEIJ9WqxGpz7cDgI8eBWPPRI7TOGUzRIPULtCGMskybciY1kVCzRoL4YTw3VdPIspIpZQXhMcOcMxW+Xjh1wOEHgkAbq9rigB4Eba7kBWTxB1ov1KoAnE4k3eFbiNXVau93jLtieCgbmpdrDNnAqcfx0ygng48+boi29hlgCiy+PgXkTfg2NPKI00vexZJpGZvbG09UcrnD+XxMo3DYkrLsCvXyUyjxXy6nhjzaEDmOfTegziWkJoV9kpszI5xlj2DBMZLYPAT9AS6x3fVCECOgO7O7Wo13WBT6MvlRVcqdBntRJgKDqAVz6WkejO2Ji8oDgPHklEn7Cvw9Rt8mPLFt52OKV5DtHfh+DzS8xQODvme9wPopY4mW6wzGSQwaBO7jYa2lBjFAopV8AafV/ZWYgy7+SKy5tbvG7fd7qDN03wyTMOUocw0on4LtrN+JpAyP4AalXHGusZiixfTStwcFOKgZTsM8jnrWEFwzJXAmT8iKz9nRxe2m1H07s1PaX+S6Rp2D/XE3dQ9k6b0MqJahPkIdAfC8G28FBv+ealZme0Pw2OI+XkEflhYCZZiG+QWIkszEUeX5zavtj5am6L9pfc/1u7tpEzlOdTlKvLYBnNWoteJkxrGsD7ZnDWPmVf/ChX/4BmiRqmITYtss4oha5278Ymj+5a+3/B/r/8Aor4fguTLT+YAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #ffffff } 
+	</style>
+	<path id="Layer" class="s0" d="m15 30c-8.3 0-15-6.71-15-15c0-8.3 6.7-15 15-15c8.29 0 15 6.7 15 15c0 8.29-6.71 15-15 15z" />
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g id="Layer">
+		</g>
+	</g>
+	<use id="Background" href="#img1" x="3" y="8" />
+</svg>
